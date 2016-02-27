@@ -1,0 +1,43 @@
+// This is a manifest file that'll be compiled into application.js, which will include all the files
+// listed below.
+//
+// Any JavaScript/Coffee file within this directory, lib/assets/javascripts, vendor/assets/javascripts,
+// or any plugin's vendor/assets/javascripts directory can be referenced here using a relative path.
+//
+// It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
+// compiled file.
+//
+// Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
+// about supported directives.
+
+// require nprogress
+// require nprogress-turbolinks
+// require jquery.slimscroll.min
+// require jquery.mCustomScrollbar.concat.min
+//
+//= require jquery
+//= require jquery_ujs
+//= require jquery-ui/autocomplete
+//= require turbolinks
+//= require bootstrap
+//= require_tree .
+
+// $(document).on("page:fetch", function(){
+//   $(".spinner").show();
+//   $(".content").addClass("modal-loading");
+// });
+
+// $(document).on("page:receive", function(){
+//   $(".spinner").hide();
+//   $(".content").removeClass("modal-loading");
+// });
+
+// NProgress.configure({
+//   showSpinner: false,
+//   ease: 'ease',
+//   speed: 500
+// });
+
+// $(document).on('page:fetch',   function() { NProgress.start(); });
+// $(document).on('page:change',  function() { NProgress.done(); });
+// $(document).on('page:restore', function() { NProgress.remove(); });

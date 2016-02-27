@@ -1,0 +1,18 @@
+<tr id="song-<%= song_counter %>" class="row-song"
+  data-id="<%= song.id %>"
+  data-khtitle="<%= song.kh_title %>"
+  data-artist="<%= get_artist_with_link song %>"
+  data-url="<%= song.url %>"
+  data-lyric="<%= song.lyric %>"
+  data-promotion-link="<%= song.promotion_image.link if song.promotion_image %>"
+  data-bg-image="<%= song.bg_image.url %>"
+  data-promotion-image="<%= song.promotion_image.image.url if song.promotion_image %>"
+  data-play-number="<%= song.play_number %>">
+  <td width="50%" class="title"><%= "#{song_counter + 1}. #{song.kh_title}" %></td>
+  <td width="30%" class="artist"><%= get_artist_with_link(song).html_safe %></td>
+  <td width="10%">
+    <span class="fb-share-button" data-href="<%= song_url(song.id) %>" data-layout="button_count"></span>
+  </td>
+  <td width="5%"><%= link_to "", song_path(song), class: "glyphicon glyphicon-headphones", title: t("labels.listen") if @songs.count > 1 %></td>
+  <td width="5%"><%= link_to "", download_path(song.id), class: "glyphicon glyphicon-save btn-download", title: t("labels.download"), target: "_blank" %></td>
+</tr>

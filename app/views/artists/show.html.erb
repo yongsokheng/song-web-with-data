@@ -1,0 +1,19 @@
+<%= provide :title, @artist.kh_name %>
+<div class="row">
+  <div class="col-md-9 album">
+    <%= render "share/artist_detail" %>
+    <%= render "share/player" %>
+    <%= render "share/fb_comment_box" %>
+  </div>
+  <div class="col-md-3">
+    <%= render "share/fb_like_box" %>
+    <%= render "share/right_ads2" %>
+    <h4>
+      <%= link_to artists_path do %>
+        <%= t "labels.other_artists" %>
+        <span class="glyphicon glyphicon-menu-right icon-more-2"></span>
+      <% end %>
+    </h4>
+    <%= render partial: "other_artist", collection: @artists, as: :artist %>
+  </div>
+</div>

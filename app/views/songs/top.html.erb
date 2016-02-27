@@ -1,0 +1,9 @@
+<%= provide :title, t("labels.top") %>
+<div class="row">
+  <div class="col-md-9">
+    <%= render "share/content_ads" %>
+    <hr>
+    <%= render partial: "share/search_result", collection: @result, as: :song %>
+  </div>
+  <%= render "share/right_part" %>
+</div>

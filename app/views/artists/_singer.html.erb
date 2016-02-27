@@ -1,0 +1,10 @@
+<div class="col-sm-3 production_box">
+  <%= link_to artist do %>
+    <div class="thumbnail">
+      <%= image_tag artist.image.url, class: "album-image" %>
+      <div class="caption">
+        <h5><%= artist.kh_name %></h5>
+      </div>
+    </div>
+  <% end %>
+</div>

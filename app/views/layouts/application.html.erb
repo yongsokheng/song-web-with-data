@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= full_title yield(:title) %></title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <%= favicon_link_tag "logo.png" %>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="uR2ja9Eis_5FTtGWpebsd-5QooehDDrJrJ9-5hsxaXY" />
+  <link href='http://fonts.googleapis.com/css?family=Hanuman' rel='stylesheet' type='text/css'>
+  <%= render "layouts/shim" %>
+  <%= render "layouts/meta" %>
+  <%= render "share/meta_og" %>
+</head>
+<body data-no-turbolink="true">
+
+  <!-- facebook comment -->
+    <div id="fb-root"></div>
+  <!-- end -->
+
+  <div class="header">
+    <%= render "layouts/header" %>
+  </div>
+  <div class="container-fluid content">
+    <%= yield %>
+  </div>
+  <div class="container-fluid footer">
+    <%= render "layouts/footer" %>
+  </div>
+</body>
+</html>

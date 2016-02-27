@@ -1,0 +1,12 @@
+<%= provide :title, t("labels.search") %>
+<div class="row">
+  <div class="col-md-9">
+    <%= render "share/content_ads" %>
+    <hr>
+    <%= render partial: "share/search_result", collection: @result, as: :song %>
+    <div class="paginate">
+      <%= paginate_page @result %>
+    </div>
+  </div>
+  <%= render "share/right_part" %>
+</div>
